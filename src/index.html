@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de Cartas</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -15,21 +14,20 @@
     />
   </head>
   <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <div class="container-fluid myContainer-fluid text-center">
+
+      <h1 class="mt-3">Generador de Cartas</h1>
+      <img src="./assets/img/rigo-baby.png" />
+      <p id="timer" class="mt-3">Nueva carta en: 10s</p>
+      <div class="myCard" id="card">
+        <div class="suitUp" id="suitUp"></div>
+        <div class="value" id="value"></div>
+        <div class="suitDown" id="suitDown"></div>
       </div>
+
+      <button id="generateBtn" class="btn btn-primary mt-4">Generar nueva carta</button>
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
 </html>
